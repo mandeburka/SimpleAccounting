@@ -1,9 +1,10 @@
-package simple.accounting
+package simple.accounting.naive
 
 import akka.actor._
 import akka.pattern.ask
 import akka.util.Timeout
-import scala.concurrent.{Await}
+
+import scala.concurrent.Await
 import scala.concurrent.duration._
 
 object Main {

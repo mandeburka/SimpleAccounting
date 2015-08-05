@@ -1,4 +1,4 @@
-package simple.accounting
+package simple.accounting.naive
 
 import akka.actor._
 import akka.event.Logging
@@ -26,6 +26,9 @@ class AccountActor extends Actor {
 }
 
 class Accounting extends Actor {
+  """
+    
+  """.stripMargin
   val log = Logging(context.system, this)
   def receive = routerBehaviour()
 
